@@ -1,1 +1,45 @@
 /* Stylesheet for Restaurant Page */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div#content {
+    display: grid;
+    grid-template-rows: 80px 1fr 50px;
+
+    background-image: url("images/pancakes.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    color: white;
+    font-size: 2rem;
+    padding-top: 100px;
+
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
