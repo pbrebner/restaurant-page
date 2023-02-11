@@ -1,5 +1,11 @@
 /* Stylesheet for Restaurant Page */
 
+:root {
+    --image-color: rgb(0, 30, 32);
+    --accent-color: rgb(243, 192, 129);
+    --background-color: whitesmoke;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +14,7 @@
 
 div#content {
     display: grid;
-    grid-template-rows: 80px 1fr 50px;
+    grid-template-rows: 100px 1fr 80px;
 
     background-image: url("images/pancakes.jpg");
     background-size: cover;
@@ -17,32 +23,133 @@ div#content {
 }
 
 .header {
-    font-size: 2rem;
-    font-weight: 600;
+    border-bottom: 3px solid var(--accent-color);
     display: flex;
-    gap: 30px;
     justify-content: center;
     align-items: center;
 }
 
-.header a {
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav button {
+    font-size: 2rem;
+    font-weight: 600;
+    background: none;
+    border: none;
     color: white;
-    text-decoration: none;
+}
+
+.nav button:hover {
+    border-bottom: 3px solid var(--accent-color);
 }
 
 .home {
     color: white;
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding-top: 100px;
+    height: 100%;
 
     display: flex;
-    gap: 50px;
     flex-direction: column;
+    gap: 50px;
     align-items: center;
+}
+
+.mainLine {
+    background-color: var(--accent-color);
+    height: 5px;
+    width: 400px;
+    border: none;
+    border-radius: 2px;
+}
+
+.smallLine {
+    background-color: var(--accent-color);
+    height: 2px;
+    width: 300px;
+    border: none;
+    border-radius: 1px;
+}
+
+.menu {
+    background-color: var(--background-color);
+    color: var(--image-color);
+    padding-top: 100px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.heading {
+    font-size: 3.2rem;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+
+.menuItem {
+    font-size: 1.3rem;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.about {
+    background-color: var(--background-color);
+    color: var(--image-color);
+    padding-top: 100px;
+    height: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.about p {
+    font-size: 1.3rem;
+    width: 600px;
+}
+
+.contact {
+    background-color: var(--background-color);
+    color: var(--image-color);
+    padding-top: 100px;
+    height: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact p {
+    font-size: 1.3rem;
+    width: 600px;
+}
+
+.map {
+    border: 1px solid var(--accent-color);
 }
 
 .footer {
     color: white;
+    font-weight: 600;
+    border-top: 3px solid var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;
