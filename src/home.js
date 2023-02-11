@@ -3,14 +3,11 @@ function createHome() {
     const home = document.createElement("div");
     home.classList.add("home");
 
-    const heading = document.createElement("h1");
-    heading.innerHTML = "The Restaurant Name";
+    const restName = document.createElement("h1");
+    restName.innerHTML = "Boston Brunch";
+    restName.classList.add("restName");
 
-    const para = document.createElement("p");
-    para.innerHTML = "This place is amazing";
-
-    home.appendChild(heading);
-    home.appendChild(para);
+    home.appendChild(restName);
 
     return home;
 }
