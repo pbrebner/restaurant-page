@@ -1,5 +1,7 @@
 # Restaurant Page
 
+![Image](UI.png)
+
 ## About
 
 A dynamically rendered restuarant hompage as part of The Odin Project.
