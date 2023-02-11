@@ -1,6 +1,6 @@
 # Restaurant Page
 
-![Image](UI.png)
+![Image](finishedUI.png)
 
 ## About
 
