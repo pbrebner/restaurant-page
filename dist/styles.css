@@ -17,7 +17,6 @@ div#content {
 }
 
 .header {
-    color: white;
     font-size: 2rem;
     font-weight: 600;
     display: flex;
@@ -26,7 +25,12 @@ div#content {
     align-items: center;
 }
 
-.main {
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.home {
     color: white;
     font-size: 2rem;
     padding-top: 100px;
